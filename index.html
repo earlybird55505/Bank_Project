@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Project</title>
+
+    <!-- all css here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="text-center">
+            <h1>Bank Balence</h1>
+            <label for="email">E-mail Account</label>
+            <br>
+            <input id="email" type="email" placeholder="Write Your Email" required>
+            <br>
+            <label for="password">E-mail Account</label>
+            <br>
+            <input id="password" type="password" placeholder="Write Your Password " required>
+            <br>
+            <button class="btn btn-success">submit</button>
+        </form>
+
+
+        <div id="balance-page">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposite box">
+                        <h5>Deposite</h5>
+                        <h5>$ <span id="deposite-amount">00</span></h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdrow box">
+                        <h5>Withdro</h5>
+                        <h5>$ <span id="withdrow-amount">00</span></h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance box">
+                        <h5>Balance</h5>
+                        <h5>$ <span id="balance-amount">500</span></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Deposite</h4>
+                    <input id="deposite-input" type="number" placeholder="00" class="form-control">
+                    <button id="add-deposite" class="btn btn-success">Deposite</button>
+                </div>
+                <div class="col-md-6">
+                    <h4>Withdrow</h4>
+                    <input id="withdrow-input" type="number" placeholder="00" class="form-control">
+                    <button id="left-withdrow" class="btn btn-success">withdrow</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
